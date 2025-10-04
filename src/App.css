@@ -1,0 +1,11 @@
+/* Estilos base de la app */
+.App {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../image/logo.png'; // ← Importación directa
 
 const Header = () => {
   const handleLogout = () => {
@@ -10,7 +11,7 @@ const Header = () => {
       <div className="header-content">
         <div className="header-logo">
           <img 
-            src="/image/logo.png"  // ← Ruta corregida
+            src={logo}  // ← Usa la variable importada
             alt="Logo" 
             className="logo-image"
           />

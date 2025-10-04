@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Alert from '../common/Alert';
+import folderIcon from '../../image/folder.png'; // ← Importaciones
+import checkmarkIcon from '../../image/Checkmark.png';
+import listIcon from '../../image/list.png';
 
 const IngresoSiniestroForm = () => {
   const [formData, setFormData] = useState({
@@ -116,7 +119,7 @@ const IngresoSiniestroForm = () => {
                 placeholder="POL123"
                 required
               />
-              <img src="/image/folder.png" alt="Póliza" className="input-icon" />
+              <img src={folderIcon} alt="Póliza" className="input-icon" />
             </div>
           </div>
           
@@ -227,7 +230,7 @@ const IngresoSiniestroForm = () => {
               className="file-button"
               onClick={handleFileUpload}
             >
-              <img src="/image/folder.png" alt="Archivo" className="file-icon" />
+              <img src={folderIcon} alt="Archivo" className="file-icon" />
               Elegir archivo
             </button>
             <span className="file-text">No se ha seleccionado ningún archivo</span>
@@ -239,11 +242,11 @@ const IngresoSiniestroForm = () => {
 
         <div className="form-actions">
           <button type="submit" className="btn btn-primary">
-            <img src="/image/Checkmark.png" alt="Validar" className="btn-icon" />
+            <img src={checkmarkIcon} alt="Validar" className="btn-icon" />
             Registrar Siniestro
           </button>
           <button type="button" onClick={handleReset} className="btn btn-secondary">
-            <img src="/image/list.png" alt="Limpiar" className="btn-icon" />
+            <img src={listIcon} alt="Limpiar" className="btn-icon" />
             Limpiar
           </button>
         </div>

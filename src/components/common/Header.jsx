@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../image/logo.png';
 
-const Header = ({ userType = 'usuario' }) => {
+const Header = ({ userType = 'admin' }) => {  // ← Valor por defecto como 'admin'
   const handleLogout = () => {
     console.log('Cerrando sesión...');
     // Aquí irá la lógica de logout
@@ -14,7 +14,7 @@ const Header = ({ userType = 'usuario' }) => {
       case 'cliente':
         return 'Cliente';
       default:
-        return 'Usuario';
+        return 'Administrador';  // ← Cambiado por defecto a Administrador
     }
   };
 

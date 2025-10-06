@@ -1,19 +1,18 @@
-import React from 'react'
-import Header from '../components/common/Header.jsx'
-import Navigation from '../components/common/Navigation.jsx'
-import IngresoSiniestroForm from '../components/forms/IngresoSiniestroForm.jsx'
-
+import React from 'react';
+import Header from '../components/common/Header';
+import Navigation from '../components/common/Navigation';
+import IngresoSiniestroForm from '../components/forms/IngresoSiniestroForm';
 
 const IngresoSiniestro = () => {
   return (
     <div className="app">
-      <Header />
+      <Header userType="admin" />  {/* ← Especificado como admin */}
       <Navigation activePage="ingreso" />
       <main className="main-content">
         <IngresoSiniestroForm />
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default IngresoSiniestro
+export default IngresoSiniestro;

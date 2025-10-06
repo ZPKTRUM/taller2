@@ -1,9 +1,21 @@
 import React from 'react';
-import logo from '../../image/logo.png'; // ← Importación directa
+import logo from '../../image/logo.png';
 
-const Header = () => {
+const Header = ({ userType = 'usuario' }) => {
   const handleLogout = () => {
     console.log('Cerrando sesión...');
+    // Aquí irá la lógica de logout
+  };
+
+  const getUserTypeDisplay = () => {
+    switch (userType) {
+      case 'admin':
+        return 'Administrador';
+      case 'cliente':
+        return 'Cliente';
+      default:
+        return 'Usuario';
+    }
   };
 
   return (
@@ -11,14 +23,14 @@ const Header = () => {
       <div className="header-content">
         <div className="header-logo">
           <img 
-            src={logo}  // ← Usa la variable importada
+            src={logo}
             alt="Logo" 
             className="logo-image"
           />
           <h1>Sistema de Asistencia Vehicular</h1>
         </div>
         <div className="user-info">
-          <span>Bienvenido, <strong>Usuario</strong></span>
+          <span>Bienvenido, <strong>{getUserTypeDisplay()}</strong></span>
           <button onClick={handleLogout} className="btn-logout">
             Cerrar Sesión
           </button>

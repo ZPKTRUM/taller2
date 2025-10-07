@@ -1,5 +1,5 @@
 import React from 'react';
-import folderIcon from '../../image/folder.png';
+import folderIcon from '../../image/folder1.png';
 import checkmarkIcon from '../../image/Checkmark.png';
 import listIcon from '../../image/list.png';
 import yellowCheckmarkIcon from '../../image/YellowCheckMark.png';

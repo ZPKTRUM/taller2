@@ -6,7 +6,7 @@ import IngresoSiniestroForm from '../components/forms/IngresoSiniestroForm';
 const IngresoSiniestro = () => {
   return (
     <div className="app">
-      <Header userType="admin" />  {/* ← Especificado como admin */}
+      <Header userType="admin" /> 
       <Navigation activePage="ingreso" />
       <main className="main-content">
         <IngresoSiniestroForm />

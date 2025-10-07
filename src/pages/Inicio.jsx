@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/common/Header';
 import Navigation from '../components/common/Navigation';
-import StatsGrid from '../components/dashboard/StatsGrid';
-import RecentActivity from '../components/dashboard/RecentActivity';
-import QuickActions from '../components/dashboard/QuickActions';
+import StatsGrid from '../components/inicio/StatsGrid';
+import RecentActivity from '../components/inicio/RecentActivity';
+import QuickActions from '../components/inicio/QuickActions';
 
 const Inicio = () => {
   const [stats, setStats] = useState({

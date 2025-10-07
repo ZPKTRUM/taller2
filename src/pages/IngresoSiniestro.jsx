@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/common/Header';
 import Navigation from '../components/common/Navigation';
-import IngresoSiniestroForm from '../components/forms/IngresoSiniestroForm';
+import IngresoSiniestroForm from '../components/ingreso/IngresoSiniestroForm';
 
 const IngresoSiniestro = () => {
   return (

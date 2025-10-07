@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Alert from '../common/Alert';
-import folderIcon from '../../image/folder.png'; // ← Importaciones
+import folderIcon from '../../image/folder.png'; 
 import checkmarkIcon from '../../image/Checkmark.png';
 import listIcon from '../../image/list.png';
 

@@ -23,3 +23,11 @@ npm install chart.js react-chartjs-2
 ```
 npm install -D vite @vitejs/plugin-react
 ```
+# Antes de ejecutar (Revisar si tiene el ambiente de nodeJS implementado al proyecto)
+```
+npm install
+```
+# Ejecutar
+```
+npm run dev
+```

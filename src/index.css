@@ -961,3 +961,26 @@ body {
     min-width: auto;
   }
 }
+
+/* === ESTILOS PARA ERRORES DE VALIDACIÓN === */
+
+.form-group input.error,
+.form-group select.error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.error-text {
+  color: #ef4444;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: block;
+  font-weight: 500;
+}
+
+/* Mejoras para campos con errores */
+.form-group input:focus.error,
+.form-group select:focus.error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
